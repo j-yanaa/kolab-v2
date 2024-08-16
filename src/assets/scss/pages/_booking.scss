@@ -1,0 +1,50 @@
+.booking_review {
+	gap: 20px !important;
+}
+
+.booking_section {
+    .booking-label {
+        font-weight: bold;
+        color: $calgar;
+    }
+    .tag-style {
+        font-weight: 500;
+    }
+    .form-address {
+        margin-bottom: 40px;
+    }
+    .next-button {
+        background-color: $calgar;
+        color: white;
+        width: 150px;
+        border-radius: 0;
+    }
+    .next-button-position {
+        border: 0;
+        background-color: #ffffff00;
+        right: 0;
+        position: absolute;
+    }
+    .prev-button-position {
+        border: 0;
+        background-color: #ffffff00;
+        left: 0;
+        position: absolute;
+    }
+    .prev-style {
+        color: #717998;
+    }
+    .button-container {
+        margin-bottom: 70px;
+    }
+    #prevButton {
+        display: block;
+    }
+    .number-style {
+        color: #8D97B0;
+        border-radius: 5px 0 0 5px;
+    }
+    .form-check {
+        padding-top: 180px;
+    }
+}

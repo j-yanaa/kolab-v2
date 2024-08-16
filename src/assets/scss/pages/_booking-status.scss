@@ -1,0 +1,203 @@
+.main-container {
+    height: 100vh;
+}
+
+.sub-container {
+    background-color: #FAFAFA;
+    width: 500px;
+}
+
+.p {
+    color: #717998;
+}
+
+button {
+    background-color: #0683D7;
+    border: none;
+    width: 200px;
+}
+
+.btn {
+    color: white;
+}
+
+.booking_status_section {
+    .breadcrumbstyle {
+        margin-bottom: 60px;
+    }
+    a {
+        text-decoration: none;
+        color: #717998;
+        font-weight: 500;
+    }
+    .container-height{
+        height: auto;
+    }
+    .active-style {
+        color: $calgar;
+        font-weight: 500;
+    }
+    .style-confirmed {
+        color: #5BB752;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .reference-num {
+        color: $calgar;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .divider-line {
+        height: .8px;
+        background-color: #717998;
+    }
+    .subheading-info {
+        color: $calgar;
+        font-weight: 500;
+    }
+    .input-style {
+        color: #717998;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .caution-style {
+        color: #717998;
+        font-size: $fs-14;
+    }
+    .summary-heading {
+        font-weight: bold;
+        margin-bottom: 0;
+        color: $calgar;
+    }
+    .amount-style {
+        font-size: $fs-24;
+        color: $calgar;
+        font-weight: 600;
+    }
+    .btn-style {
+        border: 0;
+        background-color: #00000000;
+        color: $pumpkin;
+    }
+    .reschedule-btn {
+        background-color: #00000000;
+        border-style: solid;
+        border-color: $pumpkin;
+        color: $pumpkin;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cancel-btn {
+        background-color: #00000000;
+        border-style: solid;
+        border-color: $candy-apple;
+        color: $candy-apple;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cancel-btn-style {
+        border: 0;
+        background-color: #00000000;
+        color: $candy-apple;
+    }
+    .last-item {
+        margin-bottom: 5px;
+    }
+}
+
+//proof section
+.proof_section {
+    .main-container {
+        height: auto;
+        width: 500px;
+    }
+    .description {
+        font-weight: 500;
+    }
+    .summary-heading {
+        font-weight: bold;
+        margin-bottom: 0;
+        color: $calgar;
+    }
+    .divider-line {
+        height: .8px;
+        background-color: #717998;
+    }
+    .next-button {
+        background-color: $calgar;
+        color: white;
+        width: 150px;
+        border-radius: 0;
+    }
+    .next-button-position {
+        border: 0;
+        background-color: #ffffff00;
+        right: 0;
+        width: 150px;
+        position: absolute;
+    }
+    .prev-button-position {
+        border: 0;
+        background-color: #ffffff00;
+        left: 0;
+        position: absolute;
+    }
+    .prev-style {
+        color: #717998;
+    }
+    .button-container {
+        margin-bottom: 90px;
+    }
+    #prevButton {
+        display: block;
+    }
+}
+
+//proof section
+.booking_submitted_section {
+    .main-container {
+        height: auto;
+        width: 500px;
+    }
+    .description {
+        font-weight: 500;
+    }
+    .summary-heading {
+        font-weight: bold;
+        margin-bottom: 0;
+        color: $calgar;
+    }
+    .divider-line {
+        height: .8px;
+        background-color: #717998;
+    }
+    .next-button {
+        background-color: $calgar;
+        color: white;
+        width: 150px;
+        border-radius: 0;
+    }
+    .next-button-position {
+        border: 0;
+        background-color: #ffffff00;
+        right: 0;
+        width: 150px;
+        position: absolute;
+    }
+    .prev-button-position {
+        border: 0;
+        background-color: #ffffff00;
+        left: 0;
+        position: absolute;
+    }
+    .prev-style {
+        color: #717998;
+    }
+    .button-container {
+        margin-bottom: 90px;
+    }
+    #prevButton {
+        display: block;
+    }
+}
+

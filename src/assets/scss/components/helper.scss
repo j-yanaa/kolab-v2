@@ -1,0 +1,101 @@
+@import "../components/_variables";
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.barberry {
+  color: $barberry;
+  &_bg {
+    background-color: $barberry;
+  }
+  &_lightest_bg{
+    background-color: $barberry-lightest;
+  }
+  &_lightest {
+    color: #FADE98;
+  }
+}
+
+.pumpkin {
+  color: $pumpkin;
+  &_bg {
+    background-color: $pumpkin;
+  }
+  &_lightest_bg{
+    background-color: $pumpkin-lightest;
+  }
+  &_lightest{
+    color: #FCB88E;
+  }
+}
+
+.candy-apple {
+  color: $candy-apple;
+  &_bg {
+    background-color: $candy-apple;
+  }
+  &_lightest_bg{
+    background-color: $candy-apple-lightest;
+  }
+  &_lightest {
+    color: #FF8380;
+  }
+}
+
+.calgar {
+  color: $calgar;
+  &_bg {
+    background-color: $calgar;
+  }
+  &_lightest_bg{
+    background-color: $calgar-lightest;
+  }
+  &_lightest {
+    color: #83C1EB;
+  }
+}
+
+.blue-blue {
+  color: $blue-blue;
+}
+
+.chromaphobic {
+  color: $chromaphobic;
+}
+
+.ash {
+  color: $ash;
+}
+
+.footer-color {
+  color: $footer-color;
+}
+
+.subheading{
+  font-weight: 400;
+  font-size: $fs-32;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.heading {
+  font-size: $fs-32;
+  padding: 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  letter-spacing: -0.5px;
+  line-height: 24px;
+}
+
+// Margin
+.ml-auto {
+  margin-left: auto;
+}
+// height
+.h-80 {
+  height: 80%;
+}

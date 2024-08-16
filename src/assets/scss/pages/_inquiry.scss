@@ -1,0 +1,60 @@
+.inquiry_section {
+    .main-container-inquiry {
+        height: 100%;
+    }
+    .label {
+        width: 65%;
+        height: 60px;
+        color: white;
+        font-weight: bold;
+        font-size: $fs-24;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        // position: absolute;
+        // top: -35px;
+    }
+    
+    .text-height {
+        height: 175px;
+        margin-bottom: 0;
+    }
+    .container-height {
+        height: 560;
+    }
+    
+    .image-container {
+        margin-top: 10px;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .btn-size {
+        width: 170px;
+        bottom: 5%;
+        position: absolute;
+    
+    }
+    
+    .booking-status-link {
+        color: $calgar;
+        // margin-top: 40px;
+        bottom: -38%;
+    }
+
+    .status {
+        text-decoration: none;
+        color: #0683D7;
+    }
+    @media (max-width: 600px) {
+        .card-gap {
+            top: 0;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        .text-gap-booking {
+            top: -27px;
+        }
+    }
+}
