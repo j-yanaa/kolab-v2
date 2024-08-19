@@ -1,7 +1,51 @@
 .inquiry_section {
+    background-image: url("../img/bg-cover.avif");
+    background-size: 100%;
+
     .main-container-inquiry {
         height: 100%;
+
+        .collab-container {
+            background-color: red;
+        }
+
+        .why_us_title {
+            font-size: $fs-24;
+        }
+
+        .exp_row {
+            height: 185px;
+        }
+
+        .exp_box_left {
+            transform: translate(55%, -50%);
+            height: 100px;
+        }
+
+        .exp_box_right {
+            transform: translate(-125%, -50%);
+            height: 100px;
+        }
+
+        .exp_text_w {
+            max-width: 73%;
+        }
+
+        .exp_number {
+            font-size: $fs-60;
+        }
+
+        .exp_line {
+            height: 2px;
+            width: 15%;
+            margin-top: 17px;
+        }
+
+        .exp_container {
+            height: 190px !important;
+        }
     }
+
     .label {
         width: 65%;
         height: 60px;
@@ -14,28 +58,29 @@
         // position: absolute;
         // top: -35px;
     }
-    
+
     .text-height {
         height: 175px;
         margin-bottom: 0;
     }
+
     .container-height {
         height: 560;
     }
-    
+
     .image-container {
         margin-top: 10px;
         height: 200px;
         width: 100%;
     }
-    
+
     .btn-size {
         width: 170px;
         bottom: 5%;
         position: absolute;
-    
+
     }
-    
+
     .booking-status-link {
         color: $calgar;
         // margin-top: 40px;
@@ -46,12 +91,14 @@
         text-decoration: none;
         color: #0683D7;
     }
+
     @media (max-width: 600px) {
         .card-gap {
             top: 0;
         }
-        
+
     }
+
     @media (max-width: 768px) {
         .text-gap-booking {
             top: -27px;

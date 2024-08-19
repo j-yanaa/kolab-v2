@@ -76,9 +76,9 @@
                 });
             </script> -->
             <?php if ($in_concat == true) { ?>
-                <a href="./inquiry/" class="btn btn-primary rounded-0 fw-bold px-3">Book now</a>
+                <a href="./inquiry/" class="btn btn-default rounded-0 fw-bold px-3">Book now</a>
             <?php } else { ?>
-                <a href="../inquiry/" class="btn btn-primary rounded-0 fw-bold px-3">Book now</a>
+                <a href="../inquiry/" class="btn btn-default rounded-0 fw-bold px-3">Book now</a>
             <?php } ?>
         </div>
     </div>

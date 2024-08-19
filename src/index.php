@@ -216,7 +216,7 @@ include_once("./includes/benefits.php")
             </div>
             <div class="membership-card-group d-flex w-100 flex-column flex-sm-row">
                 <div class="col-6">
-                    <img src="./assets/img/image-1.avif" alt="card" class="img-fluid w-100">
+                    <img src="./assets/img/collab-space.avif" alt="card" class="img-fluid w-100">
                 </div>
                 <div class="col-6 membership-card-info">
                     <div class="card-info ">
@@ -264,7 +264,7 @@ include_once("./includes/benefits.php")
                                     <table class="table m-0 table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col" class="benefits-col text-start fw-normal align-top text-capitalize" colspan="2">Inclusions</th>
+                                                <th scope="col" class="benefits-col text-start fw-normal align-top text-uppercase fw-bold" colspan="2">Inclusions</th>
                                                 <?php foreach ($rates as $rateName => $ratesDetails) { ?>
                                                     <th class="filler"></th>
                                                     <th scope="col" class="checklist-header text-capitalize <?php echo $rateName; ?> active text-center text-white">
@@ -361,7 +361,7 @@ include_once("./includes/benefits.php")
                                         <p class="chromaphobic">Enjoy complete flexibility and huge discounts whenever you work.</p>
                                     </div>
                                     <div class="col-12">
-                                        <button> Become a member </button>
+                                        <button class="btn btn-default"> Become a member </button>
                                     </div>
                                 </div>
 
@@ -417,7 +417,7 @@ include_once("./includes/benefits.php")
                         </div>
                         <div class="col-7 no-padding-right">
                             <div class="image-container">
-                                <img src="./assets/img/image-1.avif" class="object-fit-cover w-100 position-absolute" alt="membership-photo">
+                                <img src="./assets/img/membership.avif" class="object-fit-cover w-100 position-absolute" alt="membership-photo">
                             </div>
                         </div>
                     </div>
@@ -440,7 +440,7 @@ include_once("./includes/benefits.php")
                                         <p class="chromaphobic">Build your business presence without physically being there.</p>
                                     </div>
                                     <div class="col-12">
-                                        <button class="button yellow"> Get now </button>
+                                        <button class="btn btn-yellow"> Get now </button>
                                     </div>
                                 </div>
                                 <div class="why_us_title content col-md-7 content col-12 barberry_bg position-absolute top-50 end-0 exp_box_right text-uppercase p-3 d-flex align-items-center justify-content-center fw-semibold text-white">Virtual Office</br>Address</div>
@@ -495,7 +495,7 @@ include_once("./includes/benefits.php")
                                         <p class="chromaphobic">Host engaging community meet-ups in style.</p>
                                     </div>
                                     <div class="col-12">
-                                        <button class="button orange"> Inquire now </button>
+                                        <button class="btn btn-orange"> Inquire now </button>
                                     </div>
                                 </div>
                                 <div class="why_us_title content col-md-7 content col-12 pumpkin_bg position-absolute top-50 end-0 exp_box_left text-uppercase d-flex align-items-center justify-content-center fw-semibold text-white ms-5">Event Space</div>
@@ -568,7 +568,7 @@ include_once("./includes/benefits.php")
                         </div>
                         <div class="col-7 no-padding-right">
                             <div class="image-container">
-                                <img src="./assets/img/image-1.avif" class="object-fit-cover w-100 position-absolute" alt="membership-photo">
+                                <img src="./assets/img/event-space.avif" class="object-fit-cover w-100 position-absolute" alt="membership-photo">
                             </div>
                         </div>
                     </div>
@@ -591,7 +591,7 @@ include_once("./includes/benefits.php")
                                         <p class="chromaphobic">Professional space for your business meetings.</p>
                                     </div>
                                     <div class="col-12">
-                                        <button class="button red"> Schedule now </button>
+                                        <button class="btn btn-red"> Schedule now </button>
                                     </div>
                                 </div>
                                 <div class="why_us_title content col-md-7 content col-12 candy-apple_bg position-absolute top-50 end-0 exp_box_right text-uppercase p-3 d-flex align-items-center justify-content-center fw-semibold text-white">Meeting Room</div>

@@ -8,238 +8,212 @@ include("../connect/session_check.php");
 
 <?php ob_start(); ?>
 
-<main class="membership_modal_section container">
-	<div class="mb-3">
-        <span><a href="../inquiry" class="text-decoration-none ash">INQUIRY</a></span>
-        <span aria-hidden="true" class="ms-3"><img src="../assets/img/booking-form/next-icon.svg" class="pe-1" alt="Image"></span>
-        <span class="ms-3 calgar">Become a Member</span>
+<main class="inquiry_section">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">BOOKING FORM</h4>
+                    </div><!-- end card header -->
+                    <div class="card-body form-steps">
+                        <form class="vertical-navs-step">
+                            <div class="row gy-5">
+                                <div class="col-lg-3">
+                                    <div class="nav flex-column custom-nav nav-pills" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link done text-start" id="v-pills-bill-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-info" type="button" role="tab" aria-controls="v-pills-bill-info" aria-selected="true">
+                                            <span class="step-title me-2">
+                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                Step 1
+                                            </span>
+                                            Booking Info
+                                        </button>
+                                        <button class="nav-link active text-start" id="v-pills-bill-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-address" type="button" role="tab" aria-controls="v-pills-bill-address" aria-selected="false">
+                                            <span class="step-title me-2">
+                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                Step 2
+                                            </span>
+                                            Client Info
+                                        </button>
+                                        <button class="nav-link text-start" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment" aria-selected="false">
+                                            <span class="step-title me-2">
+                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                Step 3
+                                            </span>
+                                            Payment
+                                        </button>
+                                        <button class="nav-link text-start" id="v-pills-finish-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finish" type="button" role="tab" aria-controls="v-pills-finish" aria-selected="false">
+                                            <span class="step-title me-2">
+                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                Step 4
+                                            </span>
+                                            Finish
+                                        </button>
+                                    </div>
+                                    <!-- end nav -->
+                                </div> <!-- end col-->
+                                <div class="col-lg-6">
+                                    <div class="px-lg-4">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade" id="v-pills-bill-info" role="tabpanel" aria-labelledby="v-pills-bill-info-tab">
+                                                <div>
+                                                    <h5>Booking Info</h5>
+                                                    <p class="text-muted">Fill all information below</p>
+                                                </div>
+
+                                                <div>
+                                                    <div class="card card-h-100">
+                                                        <div class="card-body">
+                                                            <div id="calendar"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-start gap-3 mt-4">
+                                                    <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-bill-address-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Shipping</button>
+                                                </div>
+                                            </div>
+                                            <!-- end tab pane -->
+                                            <div class="tab-pane fade show active" id="v-pills-bill-address" role="tabpanel" aria-labelledby="v-pills-bill-address-tab">
+                                                <div>
+                                                    <h5>Client Info</h5>
+                                                    <p class="text-muted">Fill all information below</p>
+                                                </div>
+
+                                                <div>
+                                                    <div class="row g-3">
+                                                        <div class="col-sm-6">
+                                                            <label for="firstName" class="form-label">First name</label>
+                                                            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <label for="lastName" class="form-label">Last name</label>
+                                                            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" value="">
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="email" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="contact" class="form-label">Contact Number</label>
+                                                            <input type="tel" class="form-control" id="contact" placeholder="Enter Contact Number">
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="address" class="form-label">Address</label>
+                                                            <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="occupation" class="form-label">Occupation</label>
+                                                            <input type="text" class="form-control" id="occupation" placeholder="Enter Occupation">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-start gap-3 mt-4">
+                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Billing Info</button>
+                                                    <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-payment-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Payment</button>
+                                                </div>
+                                            </div>
+                                            <!-- end tab pane -->
+                                            <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                                <div>
+                                                    <h5>Payment</h5>
+                                                    <p class="text-muted">Fill all information below</p>
+                                                </div>
+
+                                                <div>
+                                                    <div class="row gy-3">
+                                                        <div class="col-md-12">
+                                                            <label for="pmethod" class="form-label">Payment Method</label>
+                                                            <select class="form-select" id="pmethod">
+                                                                <option value="">Choose...</option>
+                                                                <option>GCash</option>
+                                                                <option>Over the Counter</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="my-4 text-muted">
+
+                                                    <p>
+                                                    Disclosure : By submitting this form, you acknowledge and agree to the collection, use, and storage of your personal data in accordance with our Privacy Policy. Your information will be used solely for processing your request and will not be disclosed to third parties without your consent.
+                                                    </p>
+
+                                                    <div class="form-check mb-2">
+                                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                                        <label class="form-check-label" for="same-address">I agree</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-start gap-3 mt-4">
+                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-address-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Client Info</button>
+                                                    <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-finish-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Confirm</button>
+                                                </div>
+                                            </div>
+                                            <!-- end tab pane -->
+                                            <div class="tab-pane fade" id="v-pills-finish" role="tabpanel" aria-labelledby="v-pills-finish-tab">
+                                                <div class="text-center pt-4 pb-2">
+
+                                                    <div class="mb-4">
+                                                        <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#0ab39c,secondary:#405189" style="width:120px;height:120px"></lord-icon>
+                                                    </div>
+                                                    <h5>Your Order is Completed !</h5>
+                                                    <p class="text-muted">You Will receive an order confirmation email with details of your order.</p>
+                                                </div>
+                                            </div>
+                                            <!-- end tab pane -->
+                                        </div>
+                                        <!-- end tab content -->
+                                    </div>
+                                </div>
+                                <!-- end col -->
+
+                                <div class="col-lg-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="fs-14 text-primary mb-0"><i class="ri-shopping-cart-fill align-middle me-2"></i> Your booking details</h5>
+                                    </div>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                                            <div>
+                                                <h6 class="my-0">August 23, 2024</h6>
+                                                <small class="text-muted">Booking Date</small>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                                            <div>
+                                                <h6 class="my-0">Hourly</h6>
+                                                <small class="text-muted">Period</small>
+                                            </div>
+                                            <span class="text-muted">₱45</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                                            <div>
+                                                <h6 class="my-0">2 Hours</h6>
+                                                <small class="text-muted">Duration</small>
+                                            </div>
+                                            <span class="text-muted">x 2</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span>Total</span>
+                                            <strong>₱90</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </form>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
     </div>
-	<div id="carouselExample" class="carousel slide carousel-fade">
-		<div class="carousel-inner">
-			<div class="carousel-item p-5 active">
-				<div class="row justify-content-center">
-					<div class="col-md-8 col-lg-6">
-						<div class="card-body bg-light p-5 rounded position-relative" id="card-body">
-							<h2 class="booking-label text-uppercase">MEMBERSHIP form</h2>
-							<span>Personal Information</span>
-							<form onsubmit="return false" id="persnalInfoForm">
-								<div class="mb-3 mt-3">
-									<label class="tag-style">First Name</label><br>
-									<input type="text" name="firstname" class="form-control" value="<?php echo $firstname ?? "" ?>" required>
-								</div>
-								<div class="mb-3">
-									<label class="tag-style">Last Name</label><br>
-									<input type="text" name="lastname" class="form-control" value="<?php echo $lastname ?? "" ?>" required>
-								</div>
-								<div class="mb-3">
-									<label class="tag-style">Email Address</label><br>
-									<input type="email" name="email" class="form-control" value="<?php echo $email ?? "" ?>" required>
-								</div>
-								<div class="mb-3">
-									<label class="tag-style">Contact Number</label><br>
-									<div class="input-group col-sm-9">
-										<div class="input-group-prepend">
-											<span class="input-group-text number-style">+63</span>
-										</div>
-										<input type="tel" name="number" class="form-control" value="<?php echo $number ?? "" ?>" required>
-									</div>
-								</div>
-								<div class="mb-3">
-									<label class="tag-style">Date of Birth</label><br>
-									<input type="date" name="dob" class="form-control" value="<?php echo $dob ?? "" ?>" required>
-								</div>
-								<div class="form-address">
-									<label class="tag-style">Address</label><br>
-									<textarea name="address" class="form-control" required><?php echo $address ?? ""; ?></textarea>
-								</div>
-							</form>
-							<div class="button-container w-100 position-relative">
-								<button id="nextButton" class="next-button-position" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-									<span class="btn next-button" aria-hidden="true">Next</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			
-			<div class="carousel-item p-5">
-				<div class="row justify-content-center">
-					<div class="col-md-8 col-lg-6">
-						<div class="card-body bg-light p-5 rounded" id="card-body">
-							<h2 class="booking-label text-uppercase">MEMBERSHIP form</h2>
-							<span>Professional Infromation</span>
-							<form onsubmit="return false" id="detailsPriceForm">
-								<div class="mb-3 mt-3">
-									<label class="tag-style">Position/Occupation</label><br>
-									<input type="text" name="occu" class="form-control" value="<?php echo $pax ?? "" ?>" required>
-								</div>
-								<div class="mb-3 mt-3">
-									<label class="tag-style">Business/Organization</label><br>
-									<input type="text" name="org" class="form-control" value="<?php echo $pax ?? "" ?>" required>
-								</div>
-							</form>
-							<div class="w-100 position-relative d-flex align-items-center mt-5">
-								<button id="prevButton" class="prev-button-position" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-									<div class="d-flex align-items-center text-black">
-										<span aria-hidden="true"><img src="../assets/img/booking-form/prev-icon.svg" class="pe-1" alt="Image"></span>
-										<span class="prev-style" aria-hidden="true">Back</span>
-									</div>
-								</button>
-								<button id="nextButton" class="next-button-position" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-									<span class="btn next-button" aria-hidden="true">Next</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item p-5">
-				<div class="row justify-content-center">
-					<div class="col-md-8 col-lg-6">
-						<div class="card-body bg-light p-5 rounded" id="card-body">
-							<h2 class="booking-label text-uppercase">MEMBERSHIP form</h2>
-							<span>Details and Payment</span>
-							<form onsubmit="return false" id="detailsPaymentForm">
-								<div class="mb-3 mt-3">
-									<label class="tag-style">Payment Method</label><br>
-									<div>
-										<select id="membership" name="membership" class="form-select" required>
-											<option value="0">Maharlika $1500</option>
-											<option value="1">Malaya $999</option>
-											<option value="2">Uno $500</option>
-										</select>
-									</div>
-
-								</div>
-
-							</form>
-							<div class="w-100 position-relative d-flex align-items-center mt-5">
-								<button id="prevButton" class="prev-button-position" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-									<div class="d-flex align-items-center text-black">
-										<span aria-hidden="true"><img src="../assets/img/booking-form/prev-icon.svg" class="pe-1" alt="Image"></span>
-										<span class="prev-style" aria-hidden="true">Back</span>
-									</div>
-								</button>
-								<button id="nextButton" class="next-button-position" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-									<span class="btn next-button" aria-hidden="true">Next</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="carousel-item bg-light p-5 rounded mb-5">
-				<h2 class="calgar fw-bold text-uppercase p-1">MEMBERSHIP REVIEW FORM</h2>
-				<div id="bookingReviewForm">
-					<div class="row justify-content-center booking_review">
-
-						<div class="col-lg-3 card-body ps-3 rounded">
-							<p class="chromaphobic pb-3">Personal Information</p>
-							<div class="mb-3">
-								<label class="chromaphobic fw-medium">First Name</label><br>
-								<input type="text" name="firstname" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $firstname ?? "" ?>" disabled>
-							</div>
-							<div class="mb-3">
-								<label class="chromaphobic fw-medium">Last Name</label><br>
-								<input type="text" name="lastname" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $lastname ?? "" ?>" disabled>
-							</div>
-							<div class="mb-3">
-								<label class="chromaphobic fw-medium">Email</label><br>
-								<input type="email" name="email" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $email ?? "" ?>" disabled>
-							</div>
-							<div class="mb-3 input-container">
-								<label class="chromaphobic fw-medium">Contact</label><br>
-								<div class="input-group col-sm-9">
-									<div class="input-group-prepend">
-										<span class="input-group-text number-style">+63</span>
-									</div>
-									<input type="tel" name="contact" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $number ?? "" ?>" disabled>
-								</div>
-							</div>
-							<div class="mb-3 ">
-								<div class="row p-0">
-									<label class="chromaphobic fw-medium col-md-6">Date of Birth</label>
-									<span class="col-md-6 text-end">
-										<!-- <span class="text-secondary">Optional</span> -->
-									</span>
-								</div>
-								<input type="date" name="dob" class="form-control bg-white" style="color: #8D97B0;" value="<?php echo $dob ?? "" ?>" disabled>
-							</div>
-							<div class="mb-3">
-								<div class="row p-0">
-									<label class="chromaphobic fw-medium col-md-6">Address</label>
-									<span class="col-md-6 text-end">
-										<!-- <span class="text-secondary fs-6">Optional</span> -->
-									</span>
-								</div>
-								<div class="">
-									<textarea name="address" class="form-control" style="color: #8D97B0" required><?php echo $address ?? ""; ?></textarea>
-								</div>
-							</div>
-						</div>
-
-
-
-
-						<div class="col-lg-3 card-body ps-3 rounded">
-							<p class="chromaphobic pb-3">Professional Infromation</p>
-							<div class="mb-3">
-								<label class="chromaphobic fw-medium">Position/Occupation</label><br>
-								<input type="text" name="pax" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $pax ?? "" ?>" disabled>
-							</div>
-							<div class="mb-3">
-								<label class="chromaphobic fw-medium">Business/Organization</label><br>
-								<input type="text" name="pax" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $pax ?? "" ?>" disabled>
-							</div>
-						</div>
-
-
-
-						<div class="col-lg-3 card-body ps-3 rounded">
-							<p class="chromaphobic pb-3">Details and Payment</p>
-							<label class="chromaphobic fw-medium">Membership Level Section</label><br>
-							<div class="mb-3">
-								<select id="membership" name="membership" class="form-select bg-white" style="color: #8D97B0" disabled>
-									<option value="0">Maharlika $1500</option>
-									<option value="1">Malaya $999</option>
-									<option value="2">Uno $500</option>
-								</select>
-							</div>
-							<div class="mb-5">
-								<label class="chromaphobic fw-medium">Voucher Code</label><br>
-								<input type="text" name="voucher" class="form-control bg-white" style="color: #8D97B0" value="<?php echo $voucher ?? "" ?>" disabled>
-							</div>
-
-
-							<div class="form-check">
-								<input type="checkbox" class="form-check-input mt-4" id="agreementCheckbox">
-								<label class="form-check-label" for="agreementCheckbox">By selecting “Confirm”, you are confirming that you have read and agree to KOLAB’s <span><a href="#">Terms and Conditions</a></span>.</label>
-							</div>
-							<div style='color: red; font-size: smaller' class="mt-4" id="bookingMessage"></div>
-							<div class="w-100 position-relative d-flex align-items-center mt-5">
-								<button id="prevButton" class="prev-button-position" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-									<div class="d-flex align-items-center text-black">
-										<span aria-hidden="true"><img src="../assets/img/booking-form/prev-icon.svg" class="pe-1" alt="Image"></span>
-										<span class="prev-style" aria-hidden="true">Back</span>
-									</div>
-								</button>
-								<button id="<?php echo $checker ? "updateButton" : "proceedButton"; ?>" class="next-button-position" type="button">
-									<span class="btn next-button"><?php echo $checker ? "UPDATE" : "CONFIRM"; ?></span>
-								</button>
-							</div>
-						</div>
-					</div>
-					<input type="hidden" name="action" value="booking">
-				</div>
-			</div>
-		</div>
-	</div>
 </main>
 
 <?php $content = ob_get_clean(); ?>
@@ -247,61 +221,11 @@ include("../connect/session_check.php");
 <?php ob_start(); ?>
 
 <?php $scripts = ob_get_clean(); ?>
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-		var myCarousel = document.getElementById('carouselExample');
-		var prevButton = document.getElementById('prevButton');
-		var nextButton = document.getElementById('nextButton');
-
-		if (myCarousel && prevButton && nextButton) {
-			myCarousel.addEventListener('slid.bs.carousel', function() {
-				var carouselInner = this.querySelector('.carousel-inner');
-				var activeItem = carouselInner.querySelector('.carousel-item.active');
-
-				// Check if the active item is the first item
-				if (activeItem === carouselInner.firstElementChild) {
-					// Hide previous button
-					prevButton.style.display = 'none';
-				} else {
-					// Show previous button
-					prevButton.style.display = 'block';
-					nextButton.innerHTML = `<span class="btn next-button" aria-hidden="true">Next</span>`;
-				}
-
-				// Check if the active item is the third item
-				if (activeItem.nextElementSibling === null) {
-					// Disable next button
-					nextButton.innerHTML = `<button type="submit" class="btn next-button">Proceed</button>`;
-				} else {
-					// Enable next button
-					nextButton.disabled = false;
-				}
-			});
-		}
-
-		// Function to update the booking review form with data from the first three carousels
-		function updateBookingReviewForm() {
-			// Get the form and input fields
-			var bookingReviewForm = document.getElementById('bookingReviewForm');
-			var inputs = bookingReviewForm.querySelectorAll('input, textarea, select');
-
-			// Get input fields from the first three carousels
-			var carouselItems = document.querySelectorAll('.carousel-item input, .carousel-item textarea, .carousel-item select');
-
-			// Iterate over input fields and update their values
-			inputs.forEach(function(input, index) {
-				var value = carouselItems[index].value;
-				input.value = value;
-			});
-		}
-
-		// Listen for input events on input fields in the first three carousels
-		var carouselItems = document.querySelectorAll('.carousel-item input, .carousel-item textarea, .carousel-item select');
-		carouselItems.forEach(function(input) {
-			input.addEventListener('input', updateBookingReviewForm);
-		});
-	});
-</script>
 
 <?php include '../layouts/base.php'; ?>
+<!-- calendar min js -->
+<script src="../assets/libs/fullcalendar/main.min.js"></script>
+
+<!-- Calendar init -->
+<script src="../assets/js/pages/calendar.init.js"></script>
 <script src="../assets/js/global.js?=<?php echo $randomNumber; ?>"></script>

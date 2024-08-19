@@ -26,13 +26,84 @@ button {
     }
 }
 
-.btn-default {
-    background-color: $calgar;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.btn {
+    border-radius: 0;
 
-    &:hover {
-        background-color: #0056b3;
+    &-default {
+        background-color: $calgar;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $calgar;
+            color: white;
+            transform: translateY(-2px); // Floating effect on hover
+        }
+
+        &:focus,
+        &:active {
+            background-color: $calgar;
+            color: white;
+        }
+    }
+
+    &-yellow {
+        background-color: $barberry;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $barberry;
+            color: white;
+            transform: translateY(-2px); // Floating effect on hover
+        }
+
+        &:focus,
+        &:active {
+            background-color: $barberry;
+            color: white;
+        }
+    }
+
+    &-orange {
+        background-color: $pumpkin;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $pumpkin;
+            color: white;
+            transform: translateY(-2px); // Floating effect on hover
+        }
+
+        &:focus,
+        &:active {
+            background-color: $pumpkin;
+            color: white;
+        }
+    }
+
+    &-red {
+        background-color: $candy-apple;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $candy-apple;
+            color: white;
+            transform: translateY(-2px); // Floating effect on hover
+        }
+
+        &:focus,
+        &:active {
+            background-color: $candy-apple;
+            color: white;
+            outline: 2px solid $candy-apple;
+        }
     }
 }
 
