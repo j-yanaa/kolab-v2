@@ -14,7 +14,7 @@ include_once("./includes/benefits.php")
         <div class="container position-relative">
             <span class="chromaphobic subtitle-1 position-absolute top-0 start-0">Your go-to space for go-getters</span>
         </div>
-        <div class="row hero-container h-100">
+        <div class="row position-relative h-100">
             <div class="col w-100 h-100 p-0 first-col">
                 <div class="w-100 h-100 d-flex flex-column pe-0">
                     <div class="position-absolute line_container_left">
@@ -298,8 +298,6 @@ include_once("./includes/benefits.php")
                                             <?php } ?>
                                         </tbody>
                                     </table>
-
-
                                 </div>
 
                                 <div class="accordion w-100 d-sm-none d-block border border-0 rounded-0" id="accordionExample">

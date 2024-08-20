@@ -82,7 +82,7 @@ include("../connect/session_check.php");
                                     <p class="chromaphobic">Professional space for your business meetings.</p>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-red"> Schedule now </button>
+                                    <a href="../meeting/" class="btn btn-red"> Schedule now </a>
                                 </div>
                             </div>
                             <div class="why_us_title content col-md-7 content col-12 candy-apple_bg position-absolute top-50 end-0 exp_box_right text-uppercase p-3 d-flex align-items-center justify-content-center fw-semibold text-white">Meeting Room</div>

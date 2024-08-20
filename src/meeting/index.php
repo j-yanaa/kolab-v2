@@ -184,17 +184,17 @@ include("../connect/session_check.php");
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between lh-sm">
                                             <div>
-                                                <h6 class="my-0">Hourly</h6>
-                                                <small class="text-muted">Period</small>
+                                                <h6 class="my-0">Solo</h6>
+                                                <small class="text-muted">Rate</small>
                                             </div>
-                                            <span class="text-muted">₱45</span>
+                                            <span class="text-muted">₱250</span>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between lh-sm">
                                             <div>
-                                                <h6 class="my-0">2 Hours</h6>
+                                                <h6 class="my-0">3 Hours</h6>
                                                 <small class="text-muted">Duration</small>
                                             </div>
-                                            <span class="text-muted">x 2</span>
+                                            <span class="text-muted">x 1</span>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between lh-sm">
                                             <div>
@@ -204,8 +204,9 @@ include("../connect/session_check.php");
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between">
                                             <span>Total</span>
-                                            <strong>₱90</strong>
+                                            <strong>₱250</strong>
                                         </li>
+                                        
                                 </div>
                             </div>
                             <!-- end row -->
