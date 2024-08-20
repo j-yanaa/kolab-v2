@@ -37,5 +37,8 @@
     ">0.3%, ChromeAndroid 103",
     ">0.3%, Edge >= 79",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "remixicon": "^4.3.0"
+  }
 }

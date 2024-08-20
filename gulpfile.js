@@ -125,7 +125,7 @@ exports.default = series(
     copyfile_php,
     // remove_comments_php,
     jsmin,
-    avifImage,
+    // avifImage,
     svgImage,
     copyfile,
     scss,

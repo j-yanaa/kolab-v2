@@ -21,14 +21,14 @@ include("../connect/session_check.php");
                             <div class="row gy-5">
                                 <div class="col-lg-3">
                                     <div class="nav flex-column custom-nav nav-pills" role="tablist" aria-orientation="vertical">
-                                        <button class="nav-link done text-start" id="v-pills-bill-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-info" type="button" role="tab" aria-controls="v-pills-bill-info" aria-selected="true">
+                                        <button class=" nav-link done text-start" id="v-pills-bill-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-info" type="button" role="tab" aria-controls="v-pills-bill-info" aria-selected="true">
                                             <span class="step-title me-2">
                                                 <i class="ri-close-circle-fill step-icon me-2"></i>
                                                 Step 1
                                             </span>
                                             Booking Info
                                         </button>
-                                        <button class="nav-link active text-start" id="v-pills-bill-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-address" type="button" role="tab" aria-controls="v-pills-bill-address" aria-selected="false">
+                                        <button class="active nav-link text-start" id="v-pills-bill-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-address" type="button" role="tab" aria-controls="v-pills-bill-address" aria-selected="false">
                                             <span class="step-title me-2">
                                                 <i class="ri-close-circle-fill step-icon me-2"></i>
                                                 Step 2
@@ -114,8 +114,8 @@ include("../connect/session_check.php");
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-start gap-3 mt-4">
-                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Billing Info</button>
-                                                    <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-payment-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Payment</button>
+                                                    <button type="button" class="btn btn-gray btn-label previestab" data-previous="v-pills-bill-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Billing Info</button>
+                                                    <button type="button" class="btn btn-default btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-payment-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Payment</button>
                                                 </div>
                                             </div>
                                             <!-- end tab pane -->
@@ -131,7 +131,6 @@ include("../connect/session_check.php");
                                                             <label for="pmethod" class="form-label">Payment Method</label>
                                                             <select class="form-select" id="pmethod">
                                                                 <option value="">Choose...</option>
-                                                                <option>GCash</option>
                                                                 <option>Over the Counter</option>
                                                             </select>
                                                         </div>
@@ -140,7 +139,7 @@ include("../connect/session_check.php");
                                                     <hr class="my-4 text-muted">
 
                                                     <p>
-                                                    Disclosure : By submitting this form, you acknowledge and agree to the collection, use, and storage of your personal data in accordance with our Privacy Policy. Your information will be used solely for processing your request and will not be disclosed to third parties without your consent.
+                                                        Disclosure : By submitting this form, you acknowledge and agree to the collection, use, and storage of your personal data in accordance with our Privacy Policy. Your information will be used solely for processing your request and will not be disclosed to third parties without your consent.
                                                     </p>
 
                                                     <div class="form-check mb-2">
@@ -161,8 +160,8 @@ include("../connect/session_check.php");
                                                     <div class="mb-4">
                                                         <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#0ab39c,secondary:#405189" style="width:120px;height:120px"></lord-icon>
                                                     </div>
-                                                    <h5>Your Order is Completed !</h5>
-                                                    <p class="text-muted">You Will receive an order confirmation email with details of your order.</p>
+                                                    <h5>Your Booking is Submitted !</h5>
+                                                    <p class="text-muted">You will receive a confirmation email with details of your booking.</p>
                                                 </div>
                                             </div>
                                             <!-- end tab pane -->
@@ -174,7 +173,7 @@ include("../connect/session_check.php");
 
                                 <div class="col-lg-3">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h5 class="fs-14 text-primary mb-0"><i class="ri-shopping-cart-fill align-middle me-2"></i> Your booking details</h5>
+                                        <h5 class="fs-14 text-primary mb-0">Your booking details</h5>
                                     </div>
                                     <ul class="list-group mb-3">
                                         <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -197,11 +196,17 @@ include("../connect/session_check.php");
                                             </div>
                                             <span class="text-muted">x 2</span>
                                         </li>
+                                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                                            <div>
+                                                <h6 class="my-0">Over the counter</h6>
+                                            <small class="text-muted">Payment Method</small>
+                                            </div>
+                                        </li>
                                         <li class="list-group-item d-flex justify-content-between">
                                             <span>Total</span>
                                             <strong>₱90</strong>
                                         </li>
-                                    </ul>
+                                        
                                 </div>
                             </div>
                             <!-- end row -->
@@ -229,3 +234,4 @@ include("../connect/session_check.php");
 <!-- Calendar init -->
 <script src="../assets/js/pages/calendar.init.js"></script>
 <script src="../assets/js/global.js?=<?php echo $randomNumber; ?>"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>

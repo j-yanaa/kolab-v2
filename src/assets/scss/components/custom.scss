@@ -10,24 +10,95 @@ html {
 }
 
 button {
-    background-color: $calgar;
-    color: white;
+    border-radius: 0 !important;
+    border-color: $footer-color !important;
 
-    &.yellow {
-        background-color: $barberry;
+    &:focus,
+    &:active {
+        border-style: solid;
+        border-width: 2px;
+        border-color: $calgar;
+    }
+}
+
+.nav-tabs,
+.nav-pills {
+    >li {
+        >a {
+            color: $footer-color;
+            font-weight: $font-weight-medium;
+        }
+    }
+}
+
+.nav-pills {
+    >a {
+        color: $footer-color;
+        font-weight: $font-weight-medium;
+    }
+}
+
+.nav-pills {
+
+    .nav-link.active,
+    .show>.nav-link {
+        box-shadow: $element-shadow;
+    }
+}
+
+.nav-tabs-custom {
+    border-bottom: 1px solid var(--#{$prefix}ash-300);
+
+    .nav-item {
+        position: relative;
+
+        .nav-link {
+            border: none;
+            font-weight: $font-weight-medium;
+
+            &::after {
+                content: "";
+                background: $calgar;
+                height: 1px;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                transition: all 250ms ease 0s;
+                transform: scale(0);
+            }
+
+            &.active {
+                color: $calgar;
+
+                &:after {
+                    transform: scale(1);
+                }
+            }
+        }
     }
 
-    &.orange {
-        background-color: $pumpkin;
-    }
+    &.card-header-tabs {
+        margin-top: -1rem;
 
-    &.red {
-        background-color: $candy-apple;
+        .nav-link {
+            padding: $card-cap-padding-y $card-cap-padding-x;
+        }
     }
 }
 
 .btn {
-    border-radius: 0;
+    border-radius: 0 !important;
+
+    &-gray {
+        background-color: $footer-color;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-2px); // Floating effect on hover
+        }
+    }
 
     &-default {
         background-color: $calgar;
@@ -36,15 +107,12 @@ button {
         transition: all 0.3s ease;
 
         &:hover {
-            background-color: $calgar;
-            color: white;
             transform: translateY(-2px); // Floating effect on hover
         }
 
         &:focus,
         &:active {
-            background-color: $calgar;
-            color: white;
+            color: $calgar;
         }
     }
 
@@ -1196,7 +1264,7 @@ button {
     .content {
         .photo {
             img {
-                max-width: 80%;
+                width: 100%;
                 height: auto;
             }
         }
